@@ -3,10 +3,21 @@
 /* color: #757575; основной цвет текста */
 /* color: #212121; вторичный цвет текста */
 /* color: #2196f3; цвет ссылок ховер */
+/* color: #2F303A; цвет фона секций Футер и Наша команда */
+/* color: #F5F4FA; цвет фона наша команда */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+}
 
 .page {
   background: #ffffff;
-  color: #757575;
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
 }
 
 .list {
@@ -22,12 +33,12 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em; */
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo {
@@ -43,10 +54,37 @@
   /* identical to box height */
   /* letter-spacing: 0.03em; */
 
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Quality list */
 .quality-list .title {
-  color: #212121;
+  color: var(--title-text-color);
 }
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  color: var(--title-text-color);
+}
+
+.team-name {
+  color: var(--title-text-color);
+}
+
+.order,
+.page-footer {
+  background-color: #2f303a;
+}
+
+.site-address a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-address .address-content {
+  color: white;
+}
+
+/* color: rgba(255, 255, 255, 0.6); */

@@ -5,6 +5,7 @@
 /* color: #2196f3; цвет ссылок ховер */
 /* color: #2F303A; цвет фона секций Футер и Наша команда */
 /* color: #F5F4FA; цвет фона наша команда */
+
 :root {
     --primary-text-color: #757575;
     --title-text-color: #212121;
@@ -24,7 +25,12 @@ a {
   list-style: none;
 }
 
+.page-header,
 .site-nav {
+  display: flex;
+}
+
+.nav-items {
   /* display: inline-block;
   top: 32px;
   font-family: "Roboto";
@@ -33,6 +39,8 @@ a {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em; */
+  display: flex;
+  justify-content: center;
   color: var(--title-text-color);
 }
 
@@ -42,17 +50,24 @@ a {
 }
 
 .logo {
-  /* width: 145px;
-  height: 31px; */
-
-  /* font-family: "Raleway";
+  /* position: absolute; */
+  /* width: 145px; */
+  /* height: 31px; */
+  left: 215px;
+  /* top: 24px; */
+  padding-left: 215px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px; */
+  line-height: 31px;
 
   /* identical to box height */
-  /* letter-spacing: 0.03em; */
+  letter-spacing: 0.03em;
 
   color: var(--accent-color);
 }

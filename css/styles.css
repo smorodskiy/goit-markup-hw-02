@@ -1,0 +1,52 @@
+/* background: #FFFFFF; фон страницы */
+/* background: #2F303A; вторичный фон */
+/* color: #757575; основной цвет текста */
+/* color: #212121; вторичный цвет текста */
+/* color: #2196f3; цвет ссылок ховер */
+
+.page {
+  background: #ffffff;
+  color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+
+.site-nav {
+  /* display: inline-block;
+  top: 32px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em; */
+  color: #212121;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: #2196f3;
+}
+
+.logo {
+  /* width: 145px;
+  height: 31px; */
+
+  /* font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px; */
+
+  /* identical to box height */
+  /* letter-spacing: 0.03em; */
+
+  color: #2196f3;
+}
+
+/* Quality list */
+.quality-list .title {
+  color: #212121;
+}

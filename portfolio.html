@@ -4,135 +4,166 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <title>Портфолио</title>
   </head>
-  <body>
+  <body class="page-body">
     <!-- Шапка -->
-    <header>
-      <nav>
-        <a href="/"><h1>WebStudio</h1></a>
-        <ul>
-          <li><a href="">Студия</a></li>
-          <li><a href="/portfolio.html">Портфолио</a></li>
+    <header class="page-header">
+      <nav class="main-nav">
+        <a href="/"
+          ><h1 class="logo">
+            Web<span class="lastpart-logo-head">Studio</span>
+          </h1></a
+        >
+
+        <ul class="nav-items list">
+          <li><a href="./index.html">Студия</a></li>
+          <li><a href="./portfolio.html">Портфолио</a></li>
           <li><a href="">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul>
+      <ul class="nav-auth list">
         <li><a href="mailto:info@example.com">info@devstudio.com</a></li>
         <li><a href="tel:380961111111">+380961111111</a></li>
       </ul>
     </header>
     <main>
       <!-- Фильтр -->
-      <section>
+      <section class="filter-section">
+        <h2>Фильтр</h2>
         <ul>
-          <li><a href="">Все</a></li>
-          <li><a href="">Веб-сайты</a></li>
-          <li><a href="">Приложения</a></li>
-          <li><a href="">Дизайн</a></li>
-          <li><a href="">Маркетинг</a></li>
+          <li class="filter-item list">
+            <button class="filter-btn" type="button">Все</button>
+          </li>
+          <li class="filter-item list">
+            <button class="filter-btn" type="button">Веб-сайты</button>
+          </li>
+          <li class="filter-item list">
+            <button class="filter-btn" type="button">Приложения</button>
+          </li>
+          <li class="filter-item list">
+            <button class="filter-btn" type="button">Дизайн</button>
+          </li>
+          <li class="filter-item list">
+            <button class="filter-btn" type="button">Маркетинг</button>
+          </li>
         </ul>
       </section>
 
       <!-- Шаблоны -->
-      <section>
-        <ul>
-          <li>
+      <section class="template-section">
+        <ul class="template-head list">
+          <li class="filter-item">
             <img
               src="./images/template1.jpg"
               alt="Шаблон Технокряк"
               width="370"
             />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
+            <h3 class="filter-title">Технокряк</h3>
+            <p class="filter-content">Веб-сайт</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template2.jpg"
               alt="Шаблон Постер New Orlean vs Golden Star"
               width="370"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <h3 class="filter-title">Постер New Orlean vs Golden Star</h3>
+            <p class="filter-content">Дизайн</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template3.jpg"
               alt="Шаблон Ресторан Seafood"
               width="370"
             />
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
+            <h3 class="filter-title">Ресторан Seafood</h3>
+            <p class="filter-content">Приложение</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template4.jpg"
               alt="Шаблон Проект Prime"
               width="370"
             />
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
+            <h3 class="filter-title">Проект Prime</h3>
+            <p class="filter-content">Маркетинг</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template5.jpg"
               alt="Шаблон Проект Boxes"
               width="370"
             />
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
+            <h3 class="filter-title">Проект Boxes</h3>
+            <p class="filter-content">Приложение</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template6.jpg"
               alt="Шаблон Inspiration has no Borders"
               width="370"
             />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 class="filter-title">Inspiration has no Borders</h3>
+            <p class="filter-content">Веб-сайт</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template7.jpg"
               alt="Шаблон Издание Limited Edition"
               width="370"
             />
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
+            <h3 class="filter-title">Издание Limited Edition</h3>
+            <p class="filter-content">Дизайн</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template8.jpg"
               alt="Шаблон Проект LAB"
               width="370"
             />
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
+            <h3 class="filter-title">Проект LAB</h3>
+            <p class="filter-content">Маркетинг</p>
           </li>
-          <li>
+          <li class="filter-item">
             <img
               src="./images/template9.jpg"
               alt="Шаблон Growing Business"
               width="370"
             />
-            <h3>Growing Business</h3>
-            <p>Приложение</p>
+            <h3 class="filter-title">Growing Business</h3>
+            <p class="filter-content">Приложение</p>
           </li>
         </ul>
       </section>
     </main>
 
     <!-- Подвал -->
-    <footer>
-      <a href="/"><h2>WebStudio</h2></a>
+    <footer class="page-footer">
+      <!-- <div class="page-footer"></div> -->
+      <a href="/"
+        ><h2 class="logo">
+          Web<span class="lastpart-logo-foot">Studio</span>
+        </h2></a
+      >
       <address>
-        <ul>
-          <li><a href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+        <ul class="address-list list">
+          <li>
+            <a class="address-list-street" href=""
+              >г. Киев, пр-т Леси Украинки, 26</a
+            >
+          </li>
           <li><a href="mailto:info@example.com">info@example.com</a></li>
           <li><a href="tel:380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
+      <!-- </div> -->
     </footer>
   </body>
 </html>

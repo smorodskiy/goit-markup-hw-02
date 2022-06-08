@@ -11,10 +11,25 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --link-footer-color: color: rgba(255, 255, 255, 0.6);
+  --link-footer-color: rgba(255, 255, 255, 0.6);
+  --background-color-primary: #2f303a;
+  --background-color-secondary: #f5f4fa;
 }
 
+/*      Глобальные стили        */
+
+.link {
+  text-decoration: none;
+}
+
+/* Убрать точки из списков */
+.list {
+  list-style: none;
+}
+/* Общий стиль для странцы */
 .page-body {
+  font-family: Roboto;
+  font-size: 14px;
   margin-left: auto;
   margin-right: auto;
   max-width: 1170px;
@@ -23,73 +38,182 @@
   color: var(--primary-text-color);
 }
 
-a {
-  text-decoration: none;
-}
+/* ------------------------ */
 
-.list {
-  list-style: none;
+/*          Хэдер           */
+/* Логотип */
+.logo {
+  left: 215px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
 }
 
 .page-header,
 .main-nav {
+  justify-content: center;
+
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .nav-items {
-  /* display: inline-block;
-  top: 32px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em; */
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+
   display: flex;
   align-items: center;
-  color: var(--title-text-color);
-}
-
-.main-nav a:hover,
-.main-nav a:focus {
-  color: var(--accent-color);
 }
 
 .nav-auth {
-    display: flex;
-    align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  display: flex;
+  align-items: center;
+}
+/*  Конец Хэдера */
+
+/* Заказ услуг */
+
+.ourskills-list,
+.quality-list {
+  display: flex;
 }
 
-.logo {
-  /* position: absolute; */
-  /* width: 145px; */
-  /* height: 31px; */
-  left: 215px;
-  /* top: 24px; */
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: "Raleway";
-  font-style: normal;
+.order-section {
+    margin-right:auto;
+    margin-left:auto;
+    padding-top: 200px;
+    background-color: var(--background-color-primary);
+}
+
+.order-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.order-btn {
   font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;  
+  
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 200px;
+  color: #ffffff;
+}
 
-  /* identical to box height */
+.quality-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+
   letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
 
+.quality-content {
+  font-size: 14px;
+  line-height: 1.71;
+
+  /* or 171% */
+  letter-spacing: 0.03em;
+}
+
+.ourskills-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.team-card {
+  background: #ffffff;
+
+  /* material shadow v1 */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+.team-section {
+  padding-bottom: 94px;
+  background-color: var(--background-color-secondary);
+}
+
+.team-list {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.address-list-street,
+.address-list {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-list-street {
+  color: white;
+}
+
+.filter-item .filter-btn:hover,
+.filter-item .filter-btn:focus {
+  color: white;
+  background-color: var(--accent-color);
+}
+
+.address-list a:hover,
+.nav-items a:hover,
+.nav-auth a:hover,
+.address-list a:focus,
+.nav-items a:focus,
+.nav-auth a:focus {
   color: var(--accent-color);
 }
 
+.page-footer {
+  background-color: var(--background-color-primary);
+}
+
 .lastpart-logo-head {
-    color: black;
+  color: black;
 }
 
 .lastpart-logo-foot {
-    color: white;
+  color: white;
 }
-
 
 .team-title {
   color: var(--title-text-color);
@@ -98,4 +222,3 @@ a {
 .team-name {
   color: var(--title-text-color);
 }
-

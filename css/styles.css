@@ -1,18 +1,24 @@
+/* Фоновые цвет */
 /* background: #FFFFFF; фон страницы */
-/* background: #2F303A; вторичный фон */
+/* background: #2F303A; вторичный фон - Секция Заказ услуг  и Футер*/
+/* color: #F5F4FA; цвет фона секции Наша команда */
+
 /* color: #757575; основной цвет текста */
 /* color: #212121; вторичный цвет текста */
 /* color: #2196f3; цвет ссылок ховер */
-/* color: #2F303A; цвет фона секций Футер и Наша команда */
-/* color: #F5F4FA; цвет фона наша команда */
 
 :root {
-    --primary-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196f3;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --link-footer-color: color: rgba(255, 255, 255, 0.6);
 }
 
-.page {
+.page-body {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1170px;
+  justify-content: center;
   background: #ffffff;
   color: var(--primary-text-color);
 }
@@ -26,8 +32,10 @@ a {
 }
 
 .page-header,
-.site-nav {
+.main-nav {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-items {
@@ -40,13 +48,18 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em; */
   display: flex;
-  justify-content: center;
+  align-items: center;
   color: var(--title-text-color);
 }
 
-.site-nav a:hover,
-.site-nav a:focus {
+.main-nav a:hover,
+.main-nav a:focus {
   color: var(--accent-color);
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -55,9 +68,6 @@ a {
   /* height: 31px; */
   left: 215px;
   /* top: 24px; */
-  padding-left: 215px;
-  padding-top: 24px;
-  padding-bottom: 25px;
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: "Raleway";
@@ -72,14 +82,14 @@ a {
   color: var(--accent-color);
 }
 
-/* Quality list */
-.quality-list .title {
-  color: var(--title-text-color);
+.lastpart-logo-head {
+    color: black;
 }
 
-.team {
-  background-color: #f5f4fa;
+.lastpart-logo-foot {
+    color: white;
 }
+
 
 .team-title {
   color: var(--title-text-color);
@@ -89,17 +99,3 @@ a {
   color: var(--title-text-color);
 }
 
-.order,
-.page-footer {
-  background-color: #2f303a;
-}
-
-.site-address a {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.site-address .address-content {
-  color: white;
-}
-
-/* color: rgba(255, 255, 255, 0.6); */

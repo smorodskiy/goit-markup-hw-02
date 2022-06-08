@@ -18,6 +18,10 @@
 
 /*      Глобальные стили        */
 
+.container {
+  max-width: 1200px;
+}
+
 .link {
   text-decoration: none;
 }

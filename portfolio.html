@@ -4,47 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Портфолио</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>Портфолио</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="main-body">
     <!-- Шапка -->
     <header class="main-header">
-     
-        <!-- <div class="header-container"> -->
-          <!-- <div class="main-nav-container"> -->
-
-            <nav class="main-navigation">
-              <a class="link" href="/"
-                ><h1 class="logo">
-                  Web<span class="lastpart-logo-header">Studio</span>
-                </h1></a
-              >
-              <!-- </div> -->
-
-              <!-- <div class="nav-items-container"> -->
-              <ul class="main-navigation-pages list">
-                <li><a class="link" href="./index.html">Студия</a></li>
-                <li><a class="link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="link" href="">Контакты</a></li>
-              </ul>
-            </nav>
-
-          <!-- </div> -->
-
-          <!-- <div class="nav-auth-container"> -->
-            <ul class="main-navigation-contacts list">
-              <li><a class="link" href="mailto:info@example.com">info@devstudio.com</a></li>
-              <li><a class="link" href="tel:380961111111">+38 099 111 11 11</a></li>
-            </ul>
-          <!-- </div> -->
-
-        <!-- </div> -->
-      
+      <nav class="main-navigation">
+        <a class="link" href="/"
+          ><h1 class="logo">
+            Web<span class="lastpart-logo-header">Studio</span>
+          </h1></a
+        >
+        <ul class="main-navigation-pages list">
+          <li>
+            <a class="link pages-text-color" href="./index.html">Студия</a>
+          </li>
+          <li>
+            <a class="link active-color" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li><a class="link pages-text-color" href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="main-navigation-contacts list">
+        <li>
+          <a class="link contacts-text-color" href="mailto:info@example.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a class="link contacts-text-color" href="tel:380961111111"
+            >+38 099 111 11 11</a
+          >
+        </li>
+      </ul>
     </header>
 
     <main>
@@ -159,25 +157,34 @@
     </main>
 
     <!-- Подвал -->
-    <footer class="page-footer">
-      <!-- <div class="page-footer"></div> -->
+    <footer class="main-footer">
       <a class="link" href="/"
         ><h2 class="logo">
-          Web<span class="lastpart-logo-foot">Studio</span>
+          Web<span class="lastpart-logo-footer">Studio</span>
         </h2></a
       >
+      <!-- Блок с адресом -->
       <address>
         <ul class="address-list list">
           <li>
-            <a class="address-list-street link" href=""
+            <a class="link address-footer-text-color" href=""
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a class="link" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="link" href="tel:380991111111">+38 099 111 11 11</a></li>
+          <li>
+            <a
+              class="link contacts-footer-text-color"
+              href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li>
+            <a class="link contacts-footer-text-color" href="tel:380991111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
         </ul>
       </address>
-      <!-- </div> -->
     </footer>
   </body>
 </html>

@@ -18,11 +18,13 @@
 
 /*      Глобальные стили        */
 
-* {
+/* Убрать отступы у блоков */
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
+/* Убрать подчеркивание на всех ссылках */
 .link {
   text-decoration: none;
 }
@@ -46,7 +48,7 @@
 
 /* ------------------------ */
 
-/*          Хэдер           */
+/*  -------------- Хэдер ----------------          */
 /* Логотип */
 .logo {
   /* left: 215px; */
@@ -58,6 +60,10 @@
   color: var(--accent-color);
 }
 
+.lastpart-logo-header {
+  color: black;
+}
+
 .main-header {
   display: flex;
   height: 80px;
@@ -67,7 +73,6 @@
 }
 
 
-/* .page-header, */
 .main-navigation {
   /* justify-content: center; */
 
@@ -90,13 +95,17 @@
 .main-navigation-pages > li {
   margin-right: 50px;
 }
-
-.main-navigation-pages > li > a {
-  color: white;
-}
-
 .main-navigation-pages > li:last-child {
   margin-right: 0px;
+}
+.pages-text-color {
+  color: var(--title-text-color);
+}
+.contacts-text-color {
+  color: var(--primary-text-color);
+}
+.active-color {
+  color: var(--accent-color);
 }
 
 .main-navigation-contacts {
@@ -113,9 +122,15 @@
   margin-left: 50px;
 }
 
+/* Ховеры */
+.contacts-text-color:hover,
+.contacts-text-color:focus,
+.pages-text-color:focus,
+.pages-text-color:hover {
+  color: var(--accent-color);
+}
 
-/*  Конец Хэдера */
-
+/* ------------- Конец Хэдера ---------------*/
 
 
 /* Заказ услуг */
@@ -126,6 +141,7 @@
 }
 
 .order-section {
+  
     margin-right:auto;
     margin-left:auto;
     padding-top: 200px;
@@ -210,16 +226,6 @@
   letter-spacing: 0.03em;
 }
 
-.address-list-street,
-.address-list {
-  font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-}
-
-.address-list-street {
-  color: white;
-}
 
 .filter-item .filter-btn:hover,
 .filter-item .filter-btn:focus {
@@ -227,26 +233,6 @@
   background-color: var(--accent-color);
 }
 
-.address-list a:hover,
-.nav-items a:hover,
-.nav-auth a:hover,
-.address-list a:focus,
-.nav-items a:focus,
-.nav-auth a:focus {
-  color: var(--accent-color);
-}
-
-.page-footer {
-  background-color: var(--background-color-primary);
-}
-
-.lastpart-logo-header {
-  color: black;
-}
-
-.lastpart-logo-footer {
-  color: white;
-}
 
 .team-title {
   color: var(--title-text-color);
@@ -254,4 +240,26 @@
 
 .team-name {
   color: var(--title-text-color);
+}
+
+/*  ----------  Футер  --------------  */
+
+.main-footer {
+  background-color: var(--background-color-primary);
+}
+
+.address-footer-text-color,
+.address-list {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-footer-text-color {
+  color: white;
+}
+.contacts-footer-text-color {
+  color: var(--link-footer-color);
+}
+.lastpart-logo-footer {
+  color: white;
 }

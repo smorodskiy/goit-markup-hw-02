@@ -14,7 +14,7 @@
   </head>
   <body class="main-body">
     <!-- Шапка -->
-    <header class="main-header">
+    <header class="main-header block">
       <nav class="main-navigation">
         <a class="link" href="/"
           ><h1 class="logo">
@@ -22,15 +22,16 @@
           </h1></a
         >
         <ul class="main-navigation-pages list">
+          <li><a class="link pages-text-color" href="./index.html">Студия</a></li>
           <li>
-            <a class="link pages-text-color" href="./index.html">Студия</a>
-          </li>
-          <li>
-            <a class="link active-color" href="./portfolio.html">Портфолио</a>
+            <a class="link active-color" href="./portfolio.html"
+              >Портфолио</a
+            >
           </li>
           <li><a class="link pages-text-color" href="">Контакты</a></li>
         </ul>
       </nav>
+
       <ul class="main-navigation-contacts list">
         <li>
           <a class="link contacts-text-color" href="mailto:info@example.com"
@@ -158,33 +159,35 @@
 
     <!-- Подвал -->
     <footer class="main-footer">
-      <a class="link" href="/"
-        ><h2 class="logo">
-          Web<span class="lastpart-logo-footer">Studio</span>
-        </h2></a
-      >
-      <!-- Блок с адресом -->
-      <address>
-        <ul class="address-list list">
-          <li>
-            <a class="link address-footer-text-color" href=""
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li>
-            <a
-              class="link contacts-footer-text-color"
-              href="mailto:info@example.com"
-              >info@example.com</a
-            >
-          </li>
-          <li>
-            <a class="link contacts-footer-text-color" href="tel:380991111111"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="div-footer block">
+        <a class="link" href="/"
+          ><h2 class="logo">
+            Web<span class="lastpart-logo-footer">Studio</span>
+          </h2></a
+        >
+        <!-- Блок с адресом -->
+        <address>
+          <ul class="address-list list">
+            <li class="address-list-item">
+              <a class="link address-footer-text-color" href=""
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a
+                class="link contacts-footer-text-color"
+                href="mailto:info@example.com"
+                >info@example.com</a
+              >
+            </li>
+            <li class="address-list-item">
+              <a class="link contacts-footer-text-color" href="tel:380991111111"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

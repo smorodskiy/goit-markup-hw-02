@@ -32,18 +32,25 @@
 /* Глобальные атрибуты для списков */
 .list {
   list-style: none;
+  padding: 0;
 }
 
 /* Общий стиль для странцы */
 .main-body {  
   font-family: Roboto;
   font-size: 14px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1170px;
+  /* max-width: 1170px; */
   /* justify-content: center; */
   background: #ffffff;
   color: var(--primary-text-color);
+}
+
+.block {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 1170px;
 }
 
 /* ------------------------ */
@@ -135,9 +142,8 @@
 
 /* Заказ услуг */
 
-.ourskills-list,
-.quality-list {
-  display: flex;
+.ourskills-list {
+  
 }
 
 .order-section {
@@ -171,6 +177,21 @@
   color: #ffffff;
 }
 
+/* -- Особенности -- */
+.quality-list {
+    margin-top: 94px;
+    margin-bottom: 94px;
+    display: flex;
+}
+
+.quality-list-item:first-child {
+  padding-left: 0;
+}
+
+.quality-list-item {
+  padding-left: 30px;
+}
+
 .quality-title {
   font-weight: 700;
   font-size: 14px;
@@ -189,6 +210,8 @@
   letter-spacing: 0.03em;
 }
 
+/*  */
+
 .ourskills-title,
 .team-title {
   font-weight: 700;
@@ -199,6 +222,20 @@
   color: var(--title-text-color);
 }
 
+.ourskills-title {
+  padding-bottom: 50px;
+}
+
+.ourskills-list {
+  margin-bottom: 94px;
+  display: flex;
+  justify-content: space-between;
+}
+.ourskills-list-item {
+
+}
+
+/* ---- Наша команда ------ */
 .team-card {
   background: #ffffff;
 
@@ -212,6 +249,7 @@
   padding-top: 94px;
   padding-bottom: 50px;
 }
+
 .team-section {
   padding-bottom: 94px;
   background-color: var(--background-color-secondary);
@@ -219,6 +257,7 @@
 
 .team-list {
   display: flex;
+  justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -240,6 +279,12 @@
 
 .team-name {
   color: var(--title-text-color);
+  padding-top: 30px;
+  padding-bottom: 19px;
+}
+
+.team-content {
+  padding-bottom: 30px;
 }
 
 /*  ----------  Футер  --------------  */
@@ -248,12 +293,26 @@
   background-color: var(--background-color-primary);
 }
 
+.div-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .address-footer-text-color,
 .address-list {
   font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.address-list-item:first-child {
+  padding-top: 20px;
+}
+
+.address-list-item {
+  padding-top: 9px;
+}
+
 .address-footer-text-color {
   color: white;
 }

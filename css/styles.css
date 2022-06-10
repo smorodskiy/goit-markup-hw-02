@@ -14,6 +14,8 @@
   --link-footer-color: rgba(255, 255, 255, 0.6);
   --background-color-primary: #2f303a;
   --background-color-secondary: #f5f4fa;
+  --default-font-size: 14px;
+  --background-color-page: #ffffff;
 }
 
 /*    ------  Глобальные стили ------       */
@@ -32,8 +34,8 @@
 /* Общий стиль для странцы */
 .main-body {
   font-family: Roboto;
-  font-size: 14px;
-  background: #ffffff;
+  font-size: var(--default-font-size);
+  background: var(--background-color-page);
   color: var(--primary-text-color);
 }
 
@@ -51,7 +53,6 @@
 /*  -------------- Хэдер ----------------          */
 /* Логотип */
 .logo {
-  /* left: 215px; */
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -106,7 +107,7 @@
 .contacts-text-color {
   color: var(--primary-text-color);
 }
-.active-color {
+.active-page {
   color: var(--accent-color);
 }
 
@@ -193,16 +194,17 @@
 
 .quality-list-item {
   padding-left: 30px;
+  width: 270px;
 }
 
 .quality-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  padding-bottom: 10px;
 }
 
 .quality-content {
@@ -264,12 +266,6 @@
   letter-spacing: 0.03em;
 }
 
-.filter-item .filter-btn:hover,
-.filter-item .filter-btn:focus {
-  color: white;
-  background-color: var(--accent-color);
-}
-
 .team-title {
   color: var(--title-text-color);
 }
@@ -325,4 +321,93 @@
 .address-text-footer:hover,
 .contacts-text-footer:hover {
   color: var(--accent-color);
+}
+
+/* ----------------------PORTFOLIO------------------------ */
+
+/* Фильтр */
+
+.filter-section {
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.filter-title {
+  display: none;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-item {
+  padding-left: 8px;
+}
+
+.filter-item:first-child {
+  padding-left: 0;
+}
+
+.filter-btn {
+  border-radius: 4px;
+  border: none;
+  height: 38px;
+  padding-left: 22px;
+  padding-right: 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.active-filter,
+.filter-item .filter-btn:hover,
+.filter-item .filter-btn:focus {
+  color: white;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* --- Шаблоны --- */
+
+.template-section {
+  /* сделать через перменную и отнимать от падинга карток 30px*/
+  margin-bottom: 64px;
+}
+
+.template-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.template-item {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
+.template-title {
+  padding-top: 20px;
+  padding-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.template-content {
+  padding-bottom: 20px;
+  letter-spacing: 0.03em;
+}
+
+.template-title,
+.template-content {
+  padding-left: 24px;
+  padding-right: 24px;
+  line-height: 1.25;
 }

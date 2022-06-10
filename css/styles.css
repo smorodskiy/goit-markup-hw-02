@@ -277,6 +277,7 @@
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   font-weight: 500;
   font-size: 16px;
@@ -431,4 +432,36 @@
   padding-left: 24px;
   padding-right: 24px;
   line-height: 2;
+}
+
+
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+ 
+  .navigation-contacts {
+    flex-direction: column;
+    justify-content: space-evenly; 
+  }
+
+  .block {
+    max-width: 960px;
+  }
+
+  
+  .team-card {
+    /* width: 455px; */
+  }
+
+  /* .team-card, */
+  .team-list img {
+    width: calc(100% / 2 + 50px);
+    /* width: 320px; */
+  }
+
 }

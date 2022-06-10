@@ -32,7 +32,7 @@
 }
 
 /* Общий стиль для странцы */
-.main-body {
+.page {
   font-family: Roboto;
   font-size: var(--default-font-size);
   background: var(--background-color-page);
@@ -65,7 +65,7 @@
   color: black;
 }
 
-.main-header {
+.navigation-bar {
   display: flex;
   height: 80px;
   border-bottom: #ececec;
@@ -73,18 +73,18 @@
   border-bottom-width: 1px;
 }
 
-.main-header-div {
+.navigation-bar-wrapper {
   display: flex;
   justify-content: space-between;
   /* width: 100%; */
 }
 
-.main-navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.main-navigation-pages {
+.navigation-pages {
   /* dub */
   font-weight: 500;
   line-height: 1.14;
@@ -95,10 +95,10 @@
   margin-left: 93px;
 }
 
-.main-navigation-pages > li {
+.navigation-pages > li {
   margin-right: 50px;
 }
-.main-navigation-pages > li:last-child {
+.navigation-pages > li:last-child {
   margin-right: 0px;
 }
 .pages-text-color {
@@ -111,7 +111,7 @@
   color: var(--accent-color);
 }
 
-.main-navigation-contacts {
+.navigation-contacts {
   /* dub */
   font-weight: 500;
   line-height: 1.14;
@@ -121,7 +121,7 @@
   align-items: center;
 }
 
-.main-navigation-contacts > li {
+.navigation-contacts > li {
   margin-left: 50px;
 }
 
@@ -282,11 +282,11 @@
 
 /*  ----------  Футер  --------------  */
 
-.main-footer {
+.page-footer {
   background-color: var(--background-color-primary);
 }
 
-.div-footer {
+.page-footer-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
 }

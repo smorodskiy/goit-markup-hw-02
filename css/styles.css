@@ -33,7 +33,7 @@
 
 /* Общий стиль для странцы */
 .page {
-  font-family: Roboto;
+  font-family: Roboto, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: var(--default-font-size);
   background: var(--background-color-page);
   color: var(--primary-text-color);

@@ -143,6 +143,7 @@
 
 .navigation-contacts > li {
   margin-left: 50px;
+  vertical-align: middle;
 }
 
 /* Ховеры */
@@ -153,16 +154,30 @@
   color: var(--accent-color);
 }
 
+.letter-item-img,
+.phone-item-img {
+  display: none;
+}
+
+.letter-item:hover > .letter-item-img {
+  display: inline;
+  /* position: relative; */
+}
+.phone-item:hover > .phone-item-img {
+  display: inline;
+}
+
 /* ------------- Конец Хэдера ---------------*/
 
 /* Заказ услуг */
 
 .order-section {
+  background-image: url(/images/header-bg-image.jpg);
   margin-right: auto;
   margin-left: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-color-primary);
+  background-color: var(--background-color-primary);  
 }
 
 .order-title {
